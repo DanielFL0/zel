@@ -24,7 +24,7 @@ jobs:
 
       - name: Compile with GCC
         run: |
-          gcc -Wall -Wextra -o zel src/*.c
+           gcc -std=c89 -pedantic-errors -Wall -Wextra -Werror -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wconversion -o zel src/*.c
 
       - name: Run tests
         run: |
