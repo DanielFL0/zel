@@ -1,0 +1,5 @@
+*2026.04.14*
+- Go through [^1]
+
+*Footnotes*
+[^1]: [An Incremental Approach to Compiler Construction](http://scheme2006.cs.uchicago.edu/11-ghuloum.pdf)
