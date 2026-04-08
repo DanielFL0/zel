@@ -13,6 +13,7 @@
 
 **optimizations**
 - [Super-flat ASTs](https://jhwlr.io/super-flat-ast/)
+- [Flattening ASTs (and Other Compiler Data Structures)](https://www.cs.cornell.edu/~asampson/blog/flattening.html)
 
 **extras**
 - [Calendar Versioning](https://calver.org/)
