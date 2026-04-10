@@ -94,9 +94,7 @@ void arena_clear(void) {
     arena_offset = 0;
 }
 
-int main(int argc, char *argv[]) {
-    arena_t = malloc(DEFAULT_STACK_SIZE * sizeof(char));
-    node_t b = arena_alloc(sizeof(node_t));
+int main(void) {
     printf("Hello, World!\n");
     return EXIT_SUCCESS;
 }
