@@ -35,14 +35,13 @@ static size_t arena_offset = 0;
 /*
  * typedefs
  */
-typedef enum    value_t value_t;    // ast node type
-typedef union   sem_t sem_t;        // ast node semantic information
-typedef struct  node_t node_t;      // ast node struct
+typedef union   sem_t sem_t;
+typedef struct  node_t node_t;
 
-enum value_t {
+typedef enum {
     ATOM,
     EXPR
-};
+} value_t;
 
 union sem_t {
     uint64_t    number;
