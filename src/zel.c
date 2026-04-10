@@ -73,7 +73,7 @@ void partial_exp(void);
  * arena allocator
  */
 
-// samsal3: alignment must be power of 2
+/* samsal3: alignment must be power of 2 */
 size_t align(size_t value, size_t alignment) {
 	return (value + alignment - 1) & ~(alignment - 1);
 }
@@ -81,7 +81,7 @@ size_t align(size_t value, size_t alignment) {
 void *arena_alloc(size_t size) {
     if (arena_offset + size <= arena_buffer_length) {
         void *ptr = &arena_data[arena_offset];
-        // samsal3: gud enough for x64 :)
+        /* samsal3: gud enough for x64 :) */
         arena_offset = align(arena_offset + size, 16);
         memset(ptr, 0, size);
         return ptr;
